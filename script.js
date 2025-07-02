@@ -71,7 +71,7 @@ function renderResetScreen() {
 const roundElement = document.querySelector('.round');
 
 function createRoundMessage() {
-    return `round ${round} of ${ROUNDS}`;
+    return `round ${round}`;
 }
 
 function renderRoundMessage() {
