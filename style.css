@@ -1,0 +1,91 @@
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: rgb(178, 223, 223);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    background-color: #22222e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 260px;
+    padding: 10px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.screen {
+    background-color: #6c7767;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    min-height: 20vh;
+}
+
+.area {
+    background-color:#5b6358;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.area #header {
+    background-color: green;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.area #main {
+    background-color: green;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    flex-shrink: 0;
+    gap: 10px;
+
+}
+
+.controls button {
+    background-color: #778899;
+    height: 30px;
+    border-radius: 5px;
+    width: 60px;
+
+}
