@@ -1,58 +1,72 @@
 
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.cdnfonts.com/css/seven-segment');
+
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Seven Segment', sans-serif;
+
 }
 
 .main {
-    background-color: rgb(178, 223, 223);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .game {
-    background-color: #22222e;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 300px;
     width: 260px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
     flex-shrink: 0;
+
+    background-color: #e32a25;
+    box-shadow: 3px 3px #b8a8a2;
+    border: 4px solid #ebe5e5;
+
 }
 
 .screen {
-    background-color: #6c7767;
-    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    margin-bottom: 10px;
-    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 20px;
+
+    height: 210px;
     min-height: 20vh;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    background-color: #ebe5e5;
 }
 
 .area {
-    background-color:#5b6358;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70%;
+
+    height: 170px;
     width: 90%;
     padding: 5px;
     border-radius: 5px;
+
+    background-color: #000000;
 }
 
 .area #header {
-    background-color: green;
-    height: 10%;
+    background-color: #cac7b5;
+    /* height: 10%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,8 +75,9 @@ body {
 
 
 .area #main {
-    background-color: green;
-    height: 90%;
+    font-size: 24px;
+    background-color: #cac7b5;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,16 +91,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 80px;
     flex-shrink: 0;
-    gap: 10px;
+    gap: 15px;
+
 
 }
 
-.controls button {
-    background-color: #778899;
-    height: 30px;
-    border-radius: 5px;
-    width: 60px;
+button {
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    background-color: #f9ec35;
+    border: 4px solid #e3da30;
+    box-shadow: 2px 2px #b8a8a2;
 
+}
+
+button:hover{
+    box-shadow: 2px 2px #8f837e;
+}
+
+button:active{
+    box-shadow: 2px 2px #645c59;
+    transform: translate(1px, 1px)
 }
